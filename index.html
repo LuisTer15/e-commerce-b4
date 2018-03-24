@@ -6,18 +6,43 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+  <link href="font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
   <title>E-commerce-site-b4 | Luis Ternera</title>
 </head>
 <body>
+
+          <!--NAVBAR-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">E-Commerce</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span><i class="glyphicon glyphicon-shopping-cart"></i></span>Canasta</a></li>
+          <li><a href="#">Salir</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><!--END NAVBAR-->
+
   <div class="container">
     <!--HEAD SECTION-->
     <div class="row">
       <!--INPUT-->
       <div class="col-md-3">
         <div class="input-group">
-          <input type="text" name="search" class="form-control" placeholder="Buscar camisetas">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span><i class="glyphicon glyphicon-search"></i></span></button>
+          <input type="text" name="search" class="form-control outline-secondary" placeholder="Buscar camisetas">
+          <span class="input-group-append">
+            <span class="input-group-text" id="basic-addon2"><span class="oi oi-magnifying-glass" data-glyph="magnifying-glass"></span></span>
           </span>
         </div> 
       </div><!--END INPUT-->
@@ -53,15 +78,51 @@
       <!--LIST OF CATEGORIES-->
       <div class="col-md-3"> 
         <ul class="list-group">
-          <a href="#" class="list-group-item active"><span class="badge">100</span>Todos</a>
-          <a href="#" class="list-group-item"><span class="badge">29</span>Hombre</a>
-          <a href="#" class="list-group-item"><span class="badge">5</span>Mujer</a>
-          <a href="#" class="list-group-item"><span class="badge">20</span>Hipster</a>
-          <a href="#" class="list-group-item"><span class="badge">9</span>Metal</a>
-          <a href="#" class="list-group-item"><span class="badge">12</span>Universidad</a>
-          <a href="#" class="list-group-item"><span class="badge">4</span>Deportivo</a>
-          <a href="#" class="list-group-item"><span class="badge">7</span>Rayas</a>
-          <a href="#" class="list-group-item"><span class="badge">14</span>Apretado</a>
+          
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center active">
+            Todos
+            <span class="badge badge-secondary badge-pill">100</span>
+          </a>
+
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+            Hombre
+            <span class="badge badge-secondary badge-pill">29</span>
+          </a>
+
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+            Mujer
+            <span class="badge badge-secondary badge-pill">5</span>
+          </a>
+
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+            Hipster
+            <span class="badge badge-secondary badge-pill">20</span>
+          </a>
+
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+            Metal
+            <span class="badge badge-secondary badge-pill">15</span>
+          </a>
+
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+            Universidad
+            <span class="badge badge-secondary badge-pill">12</span>
+          </a>
+
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+            Deportivo
+            <span class="badge badge-secondary badge-pill">4</span>
+          </a>
+
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+            Rayas
+            <span class="badge badge-secondary badge-pill">7</span>
+          </a>
+
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+            Apretado
+            <span class="badge badge-secondary badge-pill">14</span>
+          </a>
         </ul>
       </div><!--END LIST OF CATEGORIES-->
     </div><!--END HEAD SECTION-->
