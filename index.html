@@ -9,7 +9,7 @@
   <link href="font/css/open-iconic-bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <title>E-commerce-site-b4 | Luis Ternera</title>
+  <title>E-commerce | Luis Ternera</title>
 </head>
 <body>
 
@@ -36,7 +36,7 @@
     <!--HEAD SECTION-->
     <div class="row position-relative">
       <!--INPUT-->
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <div class="input-group" id="search_box">
           <input type="text" name="search" class="form-control outline-secondary" placeholder="Buscar camisetas">
           <span class="input-group-append">
@@ -45,7 +45,7 @@
         </div> 
       </div><!--END INPUT-->
       <!--CAROUSEL-->
-      <div class="col-md-9">
+      <div class="col-lg-9">
         <div class="carousel slide" id="carousel_head" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="carousel_head" data-slide-to="0" class="active"></li>
@@ -55,13 +55,13 @@
 
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-1.jpg" alt="slider_1" >
+              <img class="d-block w-100" src="images/banner-slider-1.jpg" alt="slider_1" >
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-2.jpg" alt="slider_2" >
+              <img class="d-block w-100" src="images/banner-slider-2.jpg" alt="slider_2" >
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-3.jpg" alt="slider_3" >
+              <img class="d-block w-100" src="images/banner-slider-3.jpg" alt="slider_3" >
             </div>
           </div>
 
@@ -74,7 +74,7 @@
         </div>
       </div><!--END CAROUSEL-->
       <!--LIST OF CATEGORIES-->
-      <div class="col-md-3 position-absolute" id="categories">
+      <div class="col-lg-3 position-absolute" id="categories">
         <h5><strong>Categorías</strong></h5>
         <ul class="list-group">
           
@@ -125,12 +125,72 @@
         </ul>
       </div><!--END LIST OF CATEGORIES-->
     </div><!--END HEAD SECTION-->
-    
-    <div class="row">
-      <div class="">
-        
-      </div> 
-    </div>
+
+    <!--ITEMS SECTION-->
+    <div class="row no-gutters" id="items_wrapper">
+      <div class="col-lg-9 offset-lg-3 d-flex flex-wrap">
+        <!--CARD 1-->
+        <div class="col-sm-4" id="item_box">
+          <div class="card">
+            <img class="card-image-top" src="images/camiseta-1.jpg" alt="Camiseta 1">
+            <div class="card-body">
+              <h5 class="card-title">Hipster Ultimate</h5>
+              <p class="card-text">La camiseta ideal para hipsters.</p>
+              <button type="button" class="btn btn-primary">$229<span><span class="oi oi-basket ml-2" data-glyph="basket"></span></button>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal">Detalles</button>
+            </div>
+          </div>
+        </div><!--END CARD 1-->
+        <!--CARD 2-->
+        <div class="col-sm-4" id="item_box">
+          <div class="card">
+            <img class="card-image-top" src="images/camiseta-2.jpg" alt="Camiseta 2">
+            <div class="card-body">
+              <h5 class="card-title">On Motion Live</h5>
+              <p class="card-text">Perfecta para salidas rocosas.</p>
+              <button type="button" class="btn btn-primary">$229<span><span class="oi oi-basket ml-2" data-glyph="basket"></i></span></button>
+              <button type="button" class="btn btn-outline-dark">Detalles</button>
+            </div>
+          </div>
+        </div><!--END CARD 2-->
+        <!--CARD 3-->
+        <div class="col-sm-4" id="item_box">
+          <div class="card">
+            <img class="card-image-top" src="images/camiseta-3.jpg" alt="Camiseta 2">
+            <div class="card-body">
+              <h5 class="card-title">Underground Max</h5>
+              <p class="card-text">Para los amantes del underground.</p>
+              <button type="button" class="btn btn-primary">$229<span><span class="oi oi-basket ml-2" data-glyph="basket"></i></span></button>
+              <button type="button" class="btn btn-outline-dark">Detalles</button>
+            </div>
+          </div>
+        </div><!--END CARD 3-->
+        <!--CARD 4-->
+        <div class="col-sm-4" id="item_box">
+          <div class="card">
+            <img class="card-image-top" src="images/camiseta-4.jpg" alt="Camiseta 2">
+            <div class="card-body">
+              <h5 class="card-title">Santo Domingo Tigers</h5>
+              <p class="card-text">En honor a este gran equipo.</p>
+              <button type="button" class="btn btn-primary">$229<span><span class="oi oi-basket ml-2" data-glyph="basket"></i></span></button>
+              <button type="button" class="btn btn-outline-dark">Detalles</button>
+            </div>
+          </div>
+        </div><!--END CARD 4-->
+        <!--CARD 5-->
+        <div class="col-sm-4" id="item_box">
+          <div class="card">
+            <img class="card-image-top" src="images/camiseta-3.jpg" alt="Camiseta 2">
+            <div class="card-body">
+              <h5 class="card-title">Una camiseta más</h5>
+              <p class="card-text">Nunca sobra una así de cool.</p>
+              <button type="button" class="btn btn-primary">$229<span><span class="oi oi-basket ml-2" data-glyph="basket"></i></span></button>
+              <button type="button" class="btn btn-outline-dark">Detalles</button>
+            </div>
+          </div>
+        </div><!--END CARD 5-->
+      </div>
+    </div><!--END ITEMS SECTION-->
     
   </div>
 

@@ -9,7 +9,16 @@ body {
 	padding-top: 95px; 
 }
 
+#search_box {
+	margin-bottom: 25px;
+}
+
 #categories {
 	margin-top: 70px;
 }
 
+#item_box {
+	margin-top: 25px;
+	padding: 5px 10px 15px 10px;
+	min-height: 370px;
+}
