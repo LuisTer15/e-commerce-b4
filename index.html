@@ -13,20 +13,98 @@
 </head>
 <body>
 
+  <!--MODAL-->
+  <div class="modal" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Hipster Ultimate</h5>
+            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="alert alert-info" role="alert">
+                  <span class="oi oi-warning" data-glyph="warning"></span>
+                  Este producto está agotado.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <img src="images/camiseta-1.jpg" alt="Camiseta 1">
+              </div>
+
+              <div class="col-sm-6">
+                <p>Precio: <strong>$299</strong></p>
+                <p>Calificación: 
+                  <span class="oi oi-star" data-glyph="star"></span>
+                  <span class="oi oi-star" data-glyph="star"></span>
+                  <span class="oi oi-star" data-glyph="star"></span>
+                  <span class="oi oi-star" data-glyph="star"></span>
+                  <span class="oi oi-star text-light" data-glyph="star"></span>
+                </p>
+                <span class="badge badge-warning">Hipster</span>
+                <span class="badge badge-secondary">Deportiva</span>
+                <p class="text-primary mt-3"><span class="oi oi-heart mr-1" data-glyph="heart"></span>Agregar a los deseos</p>
+              </div>
+
+              <div class="col-12 mt-3" id="tab_modal">
+
+                <!--NAV TABS-->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="nav-item">
+                    <a class="nav-link active" href="#description" role="tab" data-toggle="tab">Descripción</a>
+                  </li>
+                  <li role="presentation" class="nav-item">
+                    <a class="nav-link" href="#comments" role="tab" data-toggle="tab">Comentarios</a>
+                  </li>
+                </ul><!--END NAV TABS-->
+
+                <!--TAB PANES-->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active m-3" id="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra vitae urna sed tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras fermentum nulla ut hendrerit viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                  </div>
+
+                  <div role="tabpanel" class="tab-pane m-3" id="comments">
+                    <div class="card">
+                      <div class="card-header">
+                        Germán Escobar comentó hace dos días
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Está camiseta está increíble, la quiero!</p>
+                      </div>
+                    </div>
+                    <textarea class="form-control mt-3" rows="3" placeholder="Ingresa tu comentario"></textarea>
+                  </div>
+                </div><!--END TAB PANES-->
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Comprar</button>
+          </div>
+        </div><!--END MODAL CONTENT-->
+      </div><!--END MODAL DIALOG-->
+  </div><!--END MODAL-->
   <!--NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">E-commerce</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+      <a class="navbar-brand" href="#">E-Commerce</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item mr-3"><a href="#" class="nav-link"><span class="oi oi-basket mr-2" data-glyph="basket"></span>Canasta</a></li>
-          <li class="nav-item"><a href="#" class="btn btn-outline-light">Salir</a></li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#"><span class="oi oi-basket mr-2" data-glyph="basket"></i></span>Canasta</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-light btn-outline-light" href="#">Salir</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -74,65 +152,63 @@
         </div>
       </div><!--END CAROUSEL-->
       <!--LIST OF CATEGORIES-->
-      <div class="col-lg-3 position-absolute" id="categories">
+      <div class="col-lg-3 position-absolute d-none d-lg-block" id="categories">
         <h5><strong>Categorías</strong></h5>
-        <ul class="list-group">
-          
-          <a href="#" class="list-group-item d-flex justify-content-between align-items-center active">
+        <ul class="list-group">    
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center active text-dark">
             Todos
             <span class="badge badge-secondary badge-pill">100</span>
           </a>
 
-          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
             Hombre
             <span class="badge badge-secondary badge-pill">29</span>
           </a>
 
-          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
             Mujer
             <span class="badge badge-secondary badge-pill">5</span>
           </a>
 
-          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
             Hipster
             <span class="badge badge-secondary badge-pill">20</span>
           </a>
 
-          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
             Metal
             <span class="badge badge-secondary badge-pill">15</span>
           </a>
 
-          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
             Universidad
             <span class="badge badge-secondary badge-pill">12</span>
           </a>
 
-          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
             Deportivo
             <span class="badge badge-secondary badge-pill">4</span>
           </a>
 
-          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
             Rayas
             <span class="badge badge-secondary badge-pill">7</span>
           </a>
 
-          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
             Apretado
             <span class="badge badge-secondary badge-pill">14</span>
           </a>
         </ul>
       </div><!--END LIST OF CATEGORIES-->
     </div><!--END HEAD SECTION-->
-
     <!--ITEMS SECTION-->
     <div class="row no-gutters" id="items_wrapper">
       <div class="col-lg-9 offset-lg-3 d-flex flex-wrap">
         <!--CARD 1-->
-        <div class="col-sm-4" id="item_box">
+        <div class="col-sm-6 col-md-4" id="item_box">
           <div class="card">
-            <img class="card-image-top" src="images/camiseta-1.jpg" alt="Camiseta 1">
+            <img class="card-image-top img-fluid" src="images/camiseta-1.jpg" alt="Camiseta 1">
             <div class="card-body">
               <h5 class="card-title">Hipster Ultimate</h5>
               <p class="card-text">La camiseta ideal para hipsters.</p>
@@ -142,45 +218,33 @@
           </div>
         </div><!--END CARD 1-->
         <!--CARD 2-->
-        <div class="col-sm-4" id="item_box">
+        <div class="col-sm-6 col-md-4" id="item_box">
           <div class="card">
-            <img class="card-image-top" src="images/camiseta-2.jpg" alt="Camiseta 2">
+            <img class="card-image-top img-fluid" src="images/camiseta-2.jpg" alt="Camiseta 2">
             <div class="card-body">
               <h5 class="card-title">On Motion Live</h5>
-              <p class="card-text">Perfecta para salidas rocosas.</p>
+              <p class="card-text">Perfecta para salidas rocosas al aire libre.</p>
               <button type="button" class="btn btn-primary">$229<span><span class="oi oi-basket ml-2" data-glyph="basket"></i></span></button>
               <button type="button" class="btn btn-outline-dark">Detalles</button>
             </div>
           </div>
         </div><!--END CARD 2-->
         <!--CARD 3-->
-        <div class="col-sm-4" id="item_box">
+        <div class="col-sm-6 col-md-4" id="item_box">
           <div class="card">
-            <img class="card-image-top" src="images/camiseta-3.jpg" alt="Camiseta 2">
+            <img class="card-image-top img-fluid" src="images/camiseta-3.jpg" alt="Camiseta 3">
             <div class="card-body">
               <h5 class="card-title">Underground Max</h5>
               <p class="card-text">Para los amantes del underground.</p>
               <button type="button" class="btn btn-primary">$229<span><span class="oi oi-basket ml-2" data-glyph="basket"></i></span></button>
-              <button type="button" class="btn btn-outline-dark">Detalles</button>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal">Detalles</button>
             </div>
           </div>
         </div><!--END CARD 3-->
         <!--CARD 4-->
-        <div class="col-sm-4" id="item_box">
+        <div class="col-sm-6 col-md-4" id="item_box">
           <div class="card">
-            <img class="card-image-top" src="images/camiseta-4.jpg" alt="Camiseta 2">
-            <div class="card-body">
-              <h5 class="card-title">Santo Domingo Tigers</h5>
-              <p class="card-text">En honor a este gran equipo.</p>
-              <button type="button" class="btn btn-primary">$229<span><span class="oi oi-basket ml-2" data-glyph="basket"></i></span></button>
-              <button type="button" class="btn btn-outline-dark">Detalles</button>
-            </div>
-          </div>
-        </div><!--END CARD 4-->
-        <!--CARD 5-->
-        <div class="col-sm-4" id="item_box">
-          <div class="card">
-            <img class="card-image-top" src="images/camiseta-3.jpg" alt="Camiseta 2">
+            <img class="card-image-top img-fluid" src="images/camiseta-5.jpg" alt="Camiseta 5">
             <div class="card-body">
               <h5 class="card-title">Una camiseta más</h5>
               <p class="card-text">Nunca sobra una así de cool.</p>
@@ -188,10 +252,21 @@
               <button type="button" class="btn btn-outline-dark">Detalles</button>
             </div>
           </div>
+        </div><!--END CARD 4-->
+        <!--CARD 5-->
+        <div class="col-sm-6 col-md-4" id="item_box">
+          <div class="card">
+            <img class="card-image-top img-fluid" src="images/camiseta-4.jpg" alt="Camiseta 4">
+            <div class="card-body">
+              <h5 class="card-title">Santo Domingo Tigers</h5>
+              <p class="card-text">En honor a este gran equipo.</p>
+              <button type="button" class="btn btn-primary">$229<span><span class="oi oi-basket ml-2" data-glyph="basket"></i></span></button>
+              <button type="button" class="btn btn-outline-dark">Detalles</button>
+            </div>
+          </div>
         </div><!--END CARD 5-->
       </div>
     </div><!--END ITEMS SECTION-->
-    
   </div>
 
   <!-- Boostrap JS -->
